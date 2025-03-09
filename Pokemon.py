@@ -19,7 +19,7 @@ class Pokemon:
 
   def fight(defending_pokemon, attacking_pokemon):
     # attacking_pokemon attacking defending_pokemon
-    def_pokemon_new_HP = defending_pokemon.get_HP - attacking_pokemon.get_AP
+    def_pokemon_new_HP = defending_pokemon.get_HP() - attacking_pokemon.get_AP()
     defending_pokemon.set_HP(def_pokemon_new_HP)
 
   def is_defeated(pokemon):
