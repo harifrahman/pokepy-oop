@@ -58,6 +58,19 @@ Here is an example of how to use the `Pokemon` class to simulate a battle from c
     python3 app.py
     ```
 
+3. Run unittest
+  - For single test file
+
+  ```sh
+  python3 -m unittest test_file.py
+  ```
+
+  - For run all test file
+
+  ```sh
+  python3 -m unittest discover
+  ```
+
 ## Contributing
 
 Feel free to submit issues and enhancement requests.
