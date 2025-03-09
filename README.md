@@ -61,19 +61,25 @@ Here is an example of how to use the `Pokemon` class to simulate a battle from c
 3. Run unittest
   - For single test file
 
-  ```sh
-  python3 -m unittest test_file.py
-  ```
+    ```sh
+    python3 -m unittest test_file.py
+    ```
 
   - For run all test file
 
-  ```sh
-  python3 -m unittest discover
-  ```
+    ```sh
+    python3 -m unittest discover
+    ```
 
 ## Contributing
 
 Feel free to submit issues and enhancement requests.
+
+## Future Feature 
+
+- adding element -> where an element will be able to have an advantage and disadvantage over other elements
+- first turn randomization -> this will randomize which pokemon will do a first turn (attacking others)
+- Introduce the Class element like [FirePokemon, WaterPokemon etc]
 
 ## License
 
