@@ -17,13 +17,13 @@ class Pokemon:
   def set_HP(self, new_health_point):
     self.__health_point = new_health_point
 
-  def fight(defending_pokemon, attacking_pokemon):
-    # attacking_pokemon attacking defending_pokemon
-    def_pokemon_new_HP = defending_pokemon.get_HP() - attacking_pokemon.get_AP()
+  def fight(self, defending_pokemon):
+    # pokemon attacking defending_pokemon
+    def_pokemon_new_HP = defending_pokemon.get_HP() - self.get_AP()
     defending_pokemon.set_HP(def_pokemon_new_HP)
 
-  def is_defeated(pokemon):
-    if pokemon.get_HP() <= 0 :
-      print(f"{pokemon.get_name()} HP touch 0..")
+  def is_defeated(self):
+    if self.get_HP() <= 0 :
+      print(f"{self.get_name()} HP touch 0..")
       return True
     return False 

@@ -36,3 +36,12 @@ class LogBattle:
   def display_winner(winner_pokemon):
     display_winner = f"{winner_pokemon.get_name()} won! with {winner_pokemon.get_HP()} HP left"
     return display_winner
+  
+  @staticmethod
+  def display_pokemon_info(pokemon, order):
+    return f"""
+  Pokemon {order} info:
+  Name: {pokemon.get_name()}
+  HP: {pokemon.get_HP()}
+  AP: {pokemon.get_AP()}
+  """

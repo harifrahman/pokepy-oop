@@ -8,12 +8,12 @@ class TestPokemon(unittest.TestCase):
     self.charmander = Pokemon("Charmander", 30, 50)
 
   def test_fight(self):
-        Pokemon.fight(self.charmander, self.magikarp)
-        self.assertEqual(self.charmander.get_HP(), 30)
+        self.magikarp.fight(self.charmander)
+        self.assertEqual(30, self.charmander.get_HP())
 
   def test_is_defeated(self):
       self.magikarp.set_HP(0)
-      self.assertTrue(Pokemon.is_defeated(self.magikarp))
+      self.assertTrue(self.magikarp.is_defeated())
 
 if __name__ == '__main__':
     unittest.main()

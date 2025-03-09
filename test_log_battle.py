@@ -22,5 +22,10 @@ class TestLogBattle(unittest.TestCase):
     actual = LogBattle.display_winner(self.charmander)
     self.assertEqual(expected, actual)
 
+  def test_display_pokemon_info(self):
+    expected = "\n  Pokemon 1 info:\n  Name: Magikarp\n  HP: 60\n  AP: 20\n  "
+    actual = LogBattle.display_pokemon_info(self.magikarp, 1)
+    self.assertEqual(expected, actual)
+
 if __name__ == '__main__':
     unittest.main()
